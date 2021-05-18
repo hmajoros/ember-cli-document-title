@@ -96,7 +96,7 @@
 
   Ember.Router.reopen({
     updateTitle: Ember.on('didTransition', function() {
-      this.send('collectTitleTokens', []);
+      this.actions.collectTitleTokens([]);
     }),
 
     setTitle: function(title) {
